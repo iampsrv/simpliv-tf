@@ -7,7 +7,7 @@ resource "aws_instance" "web" {
   security_groups = [aws_security_group.mysg.id]
   associate_public_ip_address = true
   tags = {
-    Name = "dev-ec2"
+    Name = "dev-ec2-new"
   }
 }
 
@@ -20,6 +20,6 @@ resource "aws_instance" "web1" {
   user_data = file("start.sh")
   associate_public_ip_address = true
   tags = {
-    Name = "prod-ec2"
+    Name = "prod-ec2-new"
   }
 }
