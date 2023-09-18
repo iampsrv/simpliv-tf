@@ -9,3 +9,11 @@ resource "aws_db_instance" "default" {
   parameter_group_name = "default.mysql5.7"
   skip_final_snapshot  = true
 }
+resource "aws_ebs_volume" "example" {
+  availability_zone = "us-west-2a"
+  size              = 10
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
