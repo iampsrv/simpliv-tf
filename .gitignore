@@ -1,0 +1,6 @@
+.terraform.lock.hcl
+.terraform/
+simpliv.pem
+terraformuser_accessKeys.csv
+terraform.tfstate
+terraform.tfstate.backup
